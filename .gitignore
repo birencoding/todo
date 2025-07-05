@@ -1,0 +1,18 @@
+# .gitignore for Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+.env
+.venv/
+env/
+venv/
+.idea/
+*.sqlite3
+.DS_Store
+
+# Django specific
+*.log
+staticfiles/
+media/
+db.sqlite3
