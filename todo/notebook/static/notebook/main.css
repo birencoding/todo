@@ -88,3 +88,14 @@ a.article-title:hover {
     text-align: center;
   }
 }
+
+@media (max-width: 576px) {
+  .fw-bolder-mobile {
+    font-weight: 1800 !important; /* Extra bold on mobile */
+  }
+}
+@media (min-width: 577px) {
+  .fw-bolder-mobile {
+    font-weight: 700 !important; /* Normal bold on larger screens */
+  }
+}

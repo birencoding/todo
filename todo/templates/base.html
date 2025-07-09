@@ -27,8 +27,14 @@
         
         {% if user.is_authenticated %}
         <div class="navbar-nav ms-auto">
-          <a class="nav-item nav-link" href="{% url 'users:logout' %}">Logout</a>
-          <span class="text-sm-left text-warning">Hi, {{ user.username }}!</span>
+          <!-- <div class="btn btn-info"  href="{% url 'users:logout' %}">Logout</div> -->
+          
+          <div class="col me-2 text-info">
+            <div class="text-sm-left" style="font-size: 0.5rem;">Hi,</div>
+            <div class="text-sm-left fw-bolder-mobile" style="font-size: 0.5rem;">{{ user.username|title }}</div>
+          </div>
+
+        <a class="btn btn-warning text-white " style="padding: 0.05rem 0.5rem; font-size: 0.9rem; border-radius: 2px;" href="{% url 'users:logout' %}">Logout</a>
         </div>
         {% else %}
         <div class="navbar-nav ms-auto">
